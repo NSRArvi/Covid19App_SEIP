@@ -34,12 +34,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
                     android:text="Bangladesh" />
                 <TextView
                     android:id="@+id/updateTimeTV"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
                     android:drawableStart="@drawable/ic_baseline_calendar_today_24"
                     android:drawablePadding="10dp"
                     android:layout_marginBottom="20dp"
@@ -86,7 +90,7 @@
 <!--        all data-->
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -99,11 +103,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="#2196F3"/>
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="#F44336"
                         android:padding="10dp">
 
                         <TextView
@@ -116,7 +123,7 @@
                             android:layout_marginEnd="5dp"
                             android:layout_marginBottom="5dp"
                             android:text="Case Today"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textSize="20sp" />
 
                         <TextView
@@ -130,7 +137,7 @@
                             android:layout_marginEnd="15dp"
                             android:layout_marginBottom="15dp"
                             android:text="01234"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textSize="20sp" />
 
                         <TextView
@@ -144,7 +151,7 @@
                             android:layout_marginEnd="5dp"
                             android:layout_marginBottom="5dp"
                             android:text="Total Cases"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textSize="20sp" />
 
                         <TextView
@@ -159,12 +166,13 @@
                             android:layout_marginEnd="15dp"
                             android:layout_marginBottom="15dp"
                             android:text="01234"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textSize="20sp" />
                     </RelativeLayout>
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:background="#F44336"
                         android:padding="10dp">
 
                         <TextView
@@ -177,6 +185,7 @@
                             android:layout_marginEnd="5dp"
                             android:layout_marginBottom="5dp"
                             android:text="Death Today"
+                            android:textColor="@color/white"
                             android:textSize="20sp" />
 
                         <TextView
@@ -190,7 +199,7 @@
                             android:layout_marginEnd="15dp"
                             android:layout_marginBottom="15dp"
                             android:text="0000"
-                            android:textColor="#C62828"
+                            android:textColor="@color/white"
                             android:textSize="20sp" />
 
                         <TextView
@@ -202,6 +211,7 @@
                             android:layout_marginStart="5dp"
                             android:layout_marginTop="5dp"
                             android:layout_marginEnd="5dp"
+                            android:textColor="@color/white"
                             android:layout_marginBottom="5dp"
                             android:text="Total Death"
                             android:textSize="20sp" />
@@ -218,7 +228,7 @@
                             android:text="0000"
                             android:layout_marginEnd="15dp"
                             android:layout_marginBottom="15dp"
-                            android:textColor="#C62828"
+                            android:textColor="#FFFFFF"
                             android:textSize="20sp" />
                     </RelativeLayout>
 
@@ -287,44 +297,7 @@
 
             </androidx.cardview.widget.CardView>
         </ScrollView>
-<!--        covidPng-->
-        <LinearLayout
-            android:padding="10dp"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_margin="5dp"
-                android:background="@drawable/covid"/>
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_margin="5dp"
-                android:background="@drawable/covid19"/>
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_margin="5dp"
-                android:background="@drawable/covid"/>
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_margin="5dp"
-                android:background="@drawable/covid19"/>
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_margin="5dp"
-                android:background="@drawable/covid"/>
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_margin="5dp"
-                android:background="@drawable/covid19"/>
 
-        </LinearLayout>
 
     </LinearLayout>
 </layout>
